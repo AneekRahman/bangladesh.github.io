@@ -1,88 +1,46 @@
 body{
     margin: 0;
-}
-header h1{
-    text-align: center;
+    background-color:#0088ba;
     font-family: sans-serif;
-    background-image:linear-gradient(#a8a8a8,#6d6d6d);
+    display: fle
+}
+#logo{
+    text-align: center;
     margin: 0;
-    padding: .4em 0;
     color: #fff;
-    font-weight: 500;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
 }
-.navBar{
-    background-color: #000;
+.sidebar{
+    display: flex;
+    float: left;
     color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background-color: #333;
 }
-.navBar ul{
+.sidebar ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%
 }
-.navBar li{
-    display: inline-block;
-    cursor: pointer;
+.sidebar ul li{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid #fff;
+    transition: .2s;
 }
-.navBar li a:hover{
-    background-color: red;
+.sidebar ul li:hover{
+    background-color: #2fbaed;
 }
-.navBar li a{
-    display: block;
-    padding: 16px 24px;
-    font-family: sans-serif;
+.main{
+     margin-left: 200px;
+    margin-right: 10px
 }
-.navBar .conitems{
-    position: absolute;
-    background-color: #000;
-    display: none;
-}
-.navBar .conitems a:hover{
-    background-color: gray;
-}
-.navBar .conLi:hover .conitems{
-    display: block;
-}
-.navBar .conLi:hover .conbtn{
-    background-color: red;
-}
-nav input[type=search]{
-    padding-left: 27px;
-    width: 20%;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-    background-image: url(../search_icon.png);
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: 6px 2.4px;
-    border-radius: 10px;
-    outline: none;
-}
-.column{
-    width:25%;
-    float: left;
-    font-family: sans-serif;
-    text-align: justify;
-    background-color: #eaf7f9;
-}
-.columnMain{
-    width:50%;
-    float: left;
-    font-family: sans-serif;
-    text-align: justify;
-    background-color: #d1ffdb
-}
-.columnMain h1,.columnMain p{
-    padding:0 10px
-}
-.column p,.column h1{
-    padding:0 10px;
-}
-@media(max-width:600px){
-    .column,.columnMain{
-        width:100%;
+@media screen and (max-width:700px){
+    .sidebar{
+        width: 100%;
+    }
+    .main{
+        margin-left: 10px;
+        margin-top: 250px;
     }
 }
